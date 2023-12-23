@@ -23,7 +23,7 @@
 
 2) Terminal Basics
 	Executing commands in Terminal:
-	- ls:sho
+	- ls:
  -  ![image](ls-command.png)
  	- cd:
   - ![image](cd-command.png)
@@ -54,3 +54,15 @@
 	- zip:
   - ![image](zip-command.png)
 
+3) File Manipulation
+	- Create, move, copy and delete files and directories:
+	- ![image](file-Manipulation.png)
+	- cp command used when we want to copy some file/directory from one place to another, the usage: cp <source file/directory> <destination file/directory>
+	when copying directory, we need to add the option -r to include all its content recursively.
+	- mv command used when we want to move some file/directory from one place to another, the usage: mv <source file/directory> <destination directory>
+	- rm command used when we want to remove some file(s)/directory(s), the usage:
+	rm <file/directory>...
+	when deleting a directory we need to add the option -r to remove all its content recursively.
+
+	4) Working with Text Files
+		
