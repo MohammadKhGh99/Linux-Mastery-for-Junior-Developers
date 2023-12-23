@@ -23,4 +23,34 @@
 
 2) Terminal Basics
 	Executing commands in Terminal:
-	- ls: 
+	- ls:sho
+ -  ![image](ls-command.png)
+ 	- cd:
+  - ![image](cd-command.png)
+	- pwd:
+  - ![image](pwd-command.png)
+	- mkdir:
+  - ![image](mkdir-command.png)
+	- touch:
+  - ![image](touch-command.png)
+	- clear:
+  - ![image](clear-command.png)
+	- cp:
+  - ![image](cp-command.png)
+	- df:
+  - ![image](df-command.png)
+	- mv:
+  - ![image](mv-command.png)
+	- ps:
+  - ![image](ps-command.png)
+	- rm:
+  - ![image](rm-command.png)
+	- rmdir:
+  - ![image](rmdir-command.png)
+	- sudo apt:
+  - ![image](sudo-apt-command.png)
+	- unzip:
+  - ![image](unzip-command.png)
+	- zip:
+  - ![image](zip-command.png)
+
