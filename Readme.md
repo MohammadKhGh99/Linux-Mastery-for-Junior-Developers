@@ -64,5 +64,38 @@
 	rm <file/directory>...
 	when deleting a directory we need to add the option -r to remove all its content recursively.
 
-	4) Working with Text Files
-		
+4) Working with Text Files
+	- if we have some text file and we want to view its content we can use cat command on it, like this (the file is empty):
+	- ![image](cat-vim-empty.png)
+	- if we want to change its content we can use vim command to view, change, insert content, vim command not installed in default state of Ubuntu, you can install it by executing the following command "sudo apt intsall vim", I have attached a screenshot of installing vim above, in sudo apt section, when we execute vim command on a text file a window appears, if we want to insert some text we hit "i" button then insert whatever we want, like this:
+	- ![image](vim-insert.png)
+	- when you finish insert text, hit ESC button to exit insert mode, then type ":w" and press Enter to save, ":q" and press Enter to exit vim without saving, ":wq" and press Enter to save and exit vim.
+	- this is the new content after adding text to empty text file.
+	- ![image](cat-after-inserting.png)
+	- if you want to append text at the end of the current line, press "A" in normal mode to start appending text at the end of the current line, press "I" in normal mode to insert text at the beginning of the current line, "u" in normal mode to undo changes, "Ctrl+r" in normal mode to redo changes, ":w newfilename.txt" to save the file with different name, ":w!" to force save the current file if it is read-only.
+	- this is the same file after appending some text to it:
+	- ![image](cat-after-appending.png)
+	- you can replace any text in text file in the same way as inserting, like this:
+	- ![image](cat-after-replacing.png)
+	- or you can replace a pattern using regular expressions by typing
+	":s /<text to replace>/<text to be replaced>" then press Enter, save and exit using ":wq", like this:
+	- ![image](replace-text.png)
+	- we got this result:
+	- ![image](cat-after-replacing-Hi.png)
+	- another way to replace, append text on text file is by using "nano" command, a window appears and you can navigate in the file and change whatever you want, then save using "Ctrl+O" and exit using "Ctrl+C", like this:
+	- ![image](replace-nano.png)
+
+5) User Accounts
+	- in order to add new user account we need to use "useradd" command with admin privileges like this:
+	- ![image](useradd-command.png)
+	- Consider we want to add a password for this user, we use "passwd" command with admin privileges like this:
+	- ![image](passwd-command.png)
+	- now we want to switch between users using "su" command like this:
+	- ![image](switch-user-su.png)
+	- we can switch between users temporarily by using the command "sudo su <username>" like this, in this way we don't need the user's password:
+	- ![image](switch-user-sudo.png)
+
+6) File Permissions
+	- we have some files and directories with permissions:
+	- ![image](files-list.png)
+	
