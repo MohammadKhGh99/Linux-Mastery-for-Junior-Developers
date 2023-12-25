@@ -96,6 +96,35 @@
 	- ![image](switch-user-sudo.png)
 
 6) File Permissions
-	- we have some files and directories with permissions:
+	- we have some files and directories with permissions, if the left most character is "d" this is a directory if it is "-" it is a file:
 	- ![image](files-list.png)
-	
+	- In order to change permissions for a file or directory you have to be its owner or any user that has admin privileges, we have 3 permissions "r-read, w-write, x-execute" and 3 owners "u-user, g-group, o-other", using the command "chmod" we can change the permissions, now we will see some examples of the usage of "chmod" command:
+		- Consider we want to remove all three permissions from user on directory "inner", we execute this command:
+		- ![image](remove-user-permissions.png)
+		- Consider we want to add execute permission for user on file "file1", we execute this command:
+		- ![image](add-user-permissions.png)
+		- Consider we want to remove all three permissions from group on file "file123", we execute this command:
+		- ![image](remove-group-permissions.png)
+		- Consider we want to add all three permissions for group on file "file123", we execute this command:
+		- ![image](add-group-permissions.png)
+		- Consider we want to add all three permissions for other on file "file123", we execute this command:
+		- ![image](add-other-permissions.png)
+		- Consider we want to remove all three permissions from user, group and other on directory "inner12", we execute this command:
+		- ![image](remove-all-permissions.png)
+		- Consider we want to add all three permissions for user, group and other on file "file1", we execute this command:
+		- ![image](add-all-permissions.png)
+		- Consider we want to remove all three permissions from other on directory "rootDir" or "tempDir", but their owners are not the current user so we need admin authority to change permissions for these directories, we execute this command:
+		- ![image](unauthorized-permissions-modification.png)
+
+7) Process Monitoring
+	- ps command:
+	- ![image](ps-command-new.png)
+	- we use "top" command to monitor system processes.
+	- ![image](top-command.png)
+	- we can see that process 1749 (its ID) has the most resource intensive on the system, so we want to terminate it by using "kill command".
+	- I tried to terminate it, but it seemed that it is so important and my linux has terminated 😅 (Don't Do This!).
+	- now we will show "htop" command:
+	- ![image](htop-command.png)
+	- Note that it will not be installed in default on Ubuntu, Consider installing it with "sudo apt install htop" before using it.
+
+8) Background and Foreground Processes
