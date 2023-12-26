@@ -128,3 +128,24 @@
 	- Note that it will not be installed in default on Ubuntu, Consider installing it with "sudo apt install htop" before using it.
 
 8) Background and Foreground Processes
+	- we will run a process then suspend it, then run it in background and finally bring it to foreground, I used top command.
+	- ![image](suspended-top-command.png)
+	- we want to see which process is suspended using "jobs" command.
+	- ![image](jobs-command.png)
+	- now run the suspended process in background.
+	- ![image](bg-top-command.png)
+	- and finally bring it to foreground, it will show like if we run it now.
+	- ![image](fg-top-command.png)
+
+9) Package Installation
+ - for this part I chose "python3" package to install using apt command, we need admin privileges in order to install this package so we will use "sudo apt".
+ - ![image](sudo-apt-python3.png)
+ - when executing the command it asks us for admin password, then the package starts to install, to verify that you have really install the package execute "<name of package> --version", in my case "python3 --version".
+
+10) System Updates
+	- Updating package lists done by executing the command "sudo apt update", and upgrading installed packages done by executing the command "sudo apt-get install <names of packages separated by space>", to check if there is any upgradable package, execute the command "apt list --upgradable".
+
+11) Write a Shell Script
+
+
+12) Execute and Document the Shell Script
