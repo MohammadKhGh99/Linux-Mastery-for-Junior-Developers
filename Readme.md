@@ -146,5 +146,10 @@
 	- Updating package lists done by executing the command "sudo apt update", and upgrading installed packages done by executing the command "sudo apt-get install <names of packages separated by space>", to check if there is any upgradable package, execute the command "apt list --upgradable".
 
 11) Write a Shell Script
+	- Writing a shell script starts with creating a shell file, this can be done by executing the command "vi <filename>.sh" (filename, existing or new one), or by executing the command "touch <filename>.sh" to make a shell file then open it by "vim" or "vi" to add some code to it.
+	- And this is the Shell Script:
+	- ![image](shell-script.png)
 
 12) Execute and Document the Shell Script
+	- Running a shell script done by executing the command "bash <shell script file>", I made some output messages that appears when a backup created, and in the end a message that the backup has been done successfully will appear, and that's what I got:
+	- ![image](shell-script-executing.png)
